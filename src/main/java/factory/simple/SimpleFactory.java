@@ -1,11 +1,11 @@
-package factory;
+package factory.simple;
 
 public class SimpleFactory {
-    public static product createProduct(String type){
-        if("apple".equalsIgnoreCase(type)){
+    public static product createProduct(String type) {
+        if ("apple".equalsIgnoreCase(type)) {
             return new Apple();
         }
-        if("pear".equalsIgnoreCase(type)){
+        if ("pear".equalsIgnoreCase(type)) {
             return new Pear();
         }
         return null;
@@ -16,13 +16,14 @@ public class SimpleFactory {
     }
 }
 
-abstract class product{
+abstract class product {
 
 }
 
-class Apple extends product{
+class Apple extends product {
 
 }
-class Pear extends product{
+
+class Pear extends product {
 
 }
