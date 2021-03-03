@@ -1,5 +1,5 @@
 package singleton.doublecheck;
 
 public class Singleton {
-    private static
+    private static Singleton instance;
 }

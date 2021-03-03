@@ -6,10 +6,11 @@ package singleton.basic;
  */
 public class Singleton {
 
+    private static Singleton instance = null;
+
     private Singleton() {
     }
 
-    private static Singleton instance = null;
 
     public Singleton getInstance() {
         if (instance == null)
