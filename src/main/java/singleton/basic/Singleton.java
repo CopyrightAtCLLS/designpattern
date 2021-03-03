@@ -3,6 +3,7 @@ package singleton.basic;
 /**
  * 1、懒加载
  * 2、线程不安全
+ * 3、可以被反射破坏
  */
 public class Singleton {
 
