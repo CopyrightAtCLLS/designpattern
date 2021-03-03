@@ -1,7 +1,7 @@
 package factory.simple;
 
 public class SimpleFactory {
-    public static Fruit createProduct(String type) {
+    public static Fruit createFruit(String type) {
         if ("apple".equalsIgnoreCase(type)) {
             return new Apple();
         }
@@ -12,7 +12,7 @@ public class SimpleFactory {
     }
 
     public static void main(String[] args) {
-        System.out.println(createProduct("Pear"));
+        System.out.println(createFruit("Pear"));
     }
 }
 

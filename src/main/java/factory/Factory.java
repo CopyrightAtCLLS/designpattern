@@ -1,8 +1,6 @@
 package factory;
 
-public interface Factory {
-
-    Product createProduct();
+public class Factory {
 
     public static void main(String[] args) {
         Factory factory = new AppleFactory();
@@ -10,26 +8,30 @@ public interface Factory {
     }
 }
 
-interface Product {
+interface Fruit {
 
 }
 
-class Apple implements Product {
+class Apple implements Fruit {
 }
 
-class Pear implements Product {
+class Pear implements Fruit {
+}
+
+class FactoryModel{
+    Fruit createFruit
 }
 
 class AppleFactory implements Factory {
     @Override
-    public Product createProduct() {
+    public Fruit createProduct() {
         return new Apple();
     }
 }
 
 class PearFactory implements Factory {
     @Override
-    public Product createProduct() {
+    public Fruit createProduct() {
         return new Pear();
     }
 }
