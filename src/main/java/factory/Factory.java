@@ -1,6 +1,8 @@
 package factory;
 
-public class Factory {
+public interface Factory {
+
+    Fruit createProduct();
 
     public static void main(String[] args) {
         Factory factory = new AppleFactory();
@@ -16,10 +18,6 @@ class Apple implements Fruit {
 }
 
 class Pear implements Fruit {
-}
-
-class FactoryModel{
-    Fruit createFruit
 }
 
 class AppleFactory implements Factory {
