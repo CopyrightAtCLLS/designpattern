@@ -1,8 +1,9 @@
-package innerclass;
+package singleton.innerclass;
 
 /**
  * 1、懒加载
  * 2、线程安全
+ * 3、可以被反射破坏
  *
  * 特性:内部类在程序启动时不会被加载，只有第一次被调用时才加载
  */
