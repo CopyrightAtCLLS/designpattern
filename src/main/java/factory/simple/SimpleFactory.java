@@ -1,7 +1,7 @@
 package factory.simple;
 
 public class SimpleFactory {
-    public static product createProduct(String type) {
+    public static Fruit createProduct(String type) {
         if ("apple".equalsIgnoreCase(type)) {
             return new Apple();
         }
@@ -16,14 +16,14 @@ public class SimpleFactory {
     }
 }
 
-abstract class product {
+abstract class Fruit {
 
 }
 
-class Apple extends product {
+class Apple extends Fruit {
 
 }
 
-class Pear extends product {
+class Pear extends Fruit {
 
 }
