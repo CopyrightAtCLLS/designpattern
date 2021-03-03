@@ -3,6 +3,7 @@ package singleton.doublecheck;
 /**
  * 1、懒加载
  * 2、线程安全
+ * 3、可以被反射破坏
  * <p>
  * 问题:new Singleton()的操作不是原子的，分为三条指令
  * 1、分配内存
