@@ -1,5 +1,9 @@
 package factory.simple;
 
+/**
+ * 简单工厂模式又称静态工厂模式，因为create方法通常是静态的
+ * 该模式不能避免代码的侵入性
+ */
 public class SimpleFactory {
     public static Fruit createFruit(String type) {
         if ("apple".equalsIgnoreCase(type)) {
