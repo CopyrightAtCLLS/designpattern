@@ -1,8 +1,8 @@
-package proxy.staticproxy;
+package proxy.dynamicproxy;
 
 public class Avatar implements Movie {
     @Override
     public void show() {
-        System.out.println("Avatar is being played");
+        System.out.println("Avatar");
     }
 }
