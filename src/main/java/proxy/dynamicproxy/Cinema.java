@@ -34,11 +34,11 @@ public class Cinema implements InvocationHandler {
         avatar.show();
 
         System.out.println("----------------------");
-        Movie tenet= (Movie) Proxy.newProxyInstance(Tenet.class.getClassLoader(),Tenet.class.getInterfaces(),new Cinema(new Tenet()));
+        Movie tenet = (Movie) Proxy.newProxyInstance(Tenet.class.getClassLoader(), Tenet.class.getInterfaces(), new Cinema(new Tenet()));
         tenet.show();
 
         System.out.println("----------------------");
-        System.out.println(avatar.getClass().getName()+" "+tenet.getClass().getName());
-        System.out.println(avatar.getClass().hashCode()+" "+tenet.getClass().getName().hashCode());
+        System.out.println(avatar.getClass().getName() + " " + tenet.getClass().getName());
+        System.out.println(avatar.getClass().hashCode() + " " + tenet.getClass().getName().hashCode());
     }
 }
