@@ -1,6 +1,13 @@
 package proxy.staticproxy;
 
-
+/**
+ * 静态代理
+ * 1、一个接口
+ * 2、一个接口实现类
+ * 3、代理类对接口实现类加强
+ * 缺点:
+ * 1、很不灵活
+ */
 public class Cinema implements Movie {
     private Movie movie;
 
