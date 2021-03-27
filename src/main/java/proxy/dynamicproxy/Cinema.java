@@ -38,7 +38,7 @@ public class Cinema implements InvocationHandler {
         tenet.show();
 
         System.out.println("----------------------");
-        System.out.println(avatar.getClass().getName() + " " + tenet.getClass().getName());
-        System.out.println(avatar.getClass().hashCode() + " " + tenet.getClass().getName().hashCode());
+        System.out.println(avatar.getClass().getName().hashCode() + " " + tenet.getClass().getName().hashCode());
+        System.out.println(avatar.getClass().hashCode() + " " + tenet.getClass().hashCode());
     }
 }
