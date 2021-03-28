@@ -1,6 +1,6 @@
 package singleton;
 
-import singleton.innerclass.Singleton;
+import singleton.Enum.Singleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -16,7 +16,7 @@ public class ReflectionIntrusion {
         Constructor constructor = null;
 
         try {
-            constructor = Class.forName("singleton.innerclass.Singleton").getDeclaredConstructor();
+            constructor = Class.forName("singleton.Enum.Singleton").getDeclaredConstructor();
         } catch (Exception e) {
             e.printStackTrace();
         }
