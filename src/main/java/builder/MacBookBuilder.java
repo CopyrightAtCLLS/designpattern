@@ -3,8 +3,7 @@ package builder;
 public class MacBookBuilder extends Builder {
     Computer computer = new MacBook();
 
-    public MacBookBuilder(Computer computer) {
-        this.computer = computer;
+    public MacBookBuilder() {
     }
 
     @Override
