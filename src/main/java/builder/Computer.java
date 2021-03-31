@@ -3,7 +3,7 @@ package builder;
 public abstract class Computer {
     private String cpu;
     private String memory;
-    private String OS;
+    protected String OS;
 
     protected Computer() {
     }
@@ -16,7 +16,7 @@ public abstract class Computer {
         this.memory = memory;
     }
 
-    public abstract void setOS(String OS);
+    public abstract void setOS();
 
     @Override
     public String toString() {

@@ -18,8 +18,8 @@ public class MacbookBuilder extends Builder {
     }
 
     @Override
-    void buildOS(String OS) {
-        computer.setOS(OS);
+    void buildOS() {
+        computer.setOS();
     }
 
     @Override
