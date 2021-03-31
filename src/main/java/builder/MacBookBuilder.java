@@ -1,9 +1,9 @@
 package builder;
 
-public class MacbookBuilder extends Builder {
+public class MacBookBuilder extends Builder {
     Computer computer = new MacBook();
 
-    public MacbookBuilder(Computer computer) {
+    public MacBookBuilder(Computer computer) {
         this.computer = computer;
     }
 
