@@ -5,12 +5,12 @@ public class DellBuilder extends Builder {
 
     @Override
     void buildCPU(String cpu) {
-        computer.setCpu("Intel");
+        computer.setCpu(cpu);
     }
 
     @Override
     void buildMemory(String memory) {
-        computer.setMemory("Intel");
+        computer.setMemory(memory);
     }
 
     @Override

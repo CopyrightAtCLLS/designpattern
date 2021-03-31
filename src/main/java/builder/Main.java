@@ -8,5 +8,7 @@ public class Main {
 
         Computer computer = builder.build();
         System.out.println(computer);
+        System.out.println("----------------");
+        System.out.println(new Director(new DellBuilder()).construct(););
     }
 }
