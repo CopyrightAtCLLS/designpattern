@@ -1,10 +1,7 @@
-package builder;
+package builder.traditional;
 
-public class MacBookBuilder extends Builder {
-    Computer computer = new MacBook();
-
-    public MacBookBuilder() {
-    }
+public class DellBuilder extends Builder {
+    Computer computer = new Dell();
 
     @Override
     void buildCPU(String cpu) {

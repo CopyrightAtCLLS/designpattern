@@ -1,4 +1,4 @@
-package builder;
+package builder.traditional;
 
 public abstract class Builder {
     abstract void buildCPU(String cpu);

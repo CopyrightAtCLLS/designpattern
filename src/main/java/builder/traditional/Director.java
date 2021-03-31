@@ -1,4 +1,4 @@
-package builder;
+package builder.traditional;
 
 public class Director {
     Builder builder = null;
