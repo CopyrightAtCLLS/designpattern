@@ -32,4 +32,13 @@ public class Computer {
             return new Computer(this);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "cpu='" + cpu + '\'' +
+                ", memory='" + memory + '\'' +
+                ", OS='" + OS + '\'' +
+                '}';
+    }
 }
