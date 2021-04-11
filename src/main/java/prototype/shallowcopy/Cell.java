@@ -23,4 +23,12 @@ public class Cell implements Cloneable {
                 ", birthday=" + birthday +
                 '}';
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 }
