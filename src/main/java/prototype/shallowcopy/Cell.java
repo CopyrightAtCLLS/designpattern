@@ -10,4 +10,9 @@ public class Cell implements Cloneable {
         this.name = name;
         this.birthday = birthday;
     }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
