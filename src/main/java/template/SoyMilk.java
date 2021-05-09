@@ -24,6 +24,6 @@ public abstract class SoyMilk {
     }
 
     protected boolean isPure() {
-        return true;
+        return false;
     }
 }
