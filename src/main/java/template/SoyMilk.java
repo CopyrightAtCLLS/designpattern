@@ -3,7 +3,8 @@ package template;
 public abstract class SoyMilk {
     public final void make() {
         chooseMaterial();
-        addCondiment();
+        if (!isPure())
+            addCondiment();
         soak();
         beat();
     }
@@ -20,5 +21,9 @@ public abstract class SoyMilk {
 
     private void beat() {
         System.out.println(" => 打浆");
+    }
+
+    protected boolean isPure() {
+        return true;
     }
 }
