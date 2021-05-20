@@ -6,6 +6,7 @@ package factory.abstractfac;
  */
 public interface Factory {
     Food createA();
+
     Food createB();
 
     public static void main(String[] args) {
@@ -13,13 +14,23 @@ public interface Factory {
         System.out.println(new FruitFactory().createA());
     }
 }
-interface Food{
+
+interface Food {
 }
-class Beef implements Food{}
-class Mutton implements Food{}
-class Peach implements Food{}
-class Apple implements Food{}
-class MeatFactory implements Factory{
+
+class Beef implements Food {
+}
+
+class Mutton implements Food {
+}
+
+class Peach implements Food {
+}
+
+class Apple implements Food {
+}
+
+class MeatFactory implements Factory {
     @Override
     public Food createA() {
         return new Beef();
@@ -30,7 +41,8 @@ class MeatFactory implements Factory{
         return new Mutton();
     }
 }
-class FruitFactory implements Factory{
+
+class FruitFactory implements Factory {
     @Override
     public Food createA() {
         return new Peach();
