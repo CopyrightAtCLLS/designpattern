@@ -3,6 +3,7 @@ package proxy.cglibproxy;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
+
 import java.lang.reflect.Method;
 
 /**
@@ -11,16 +12,16 @@ import java.lang.reflect.Method;
  * 缺点:
  * 1、创建对象比jdk动态代理慢很多
  * 2、对于final方法，无法进行代理
- *
+ * <p>
  * 单例的对象，因为无需频繁创建对象，用CGLib合适，反之，使用JDK方式要更为合适一些。
  * 同时，由于CGLib是采用动态创建子类的方法,对于final方法，无法进行代理
  */
 public class Cinema implements MethodInterceptor {
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("Wanda Cinema");
-        methodProxy.invokeSuper(o, objects);
+        Object result = methodProxy.invokeSuper(o, objects);
         System.out.println("End");
-        return null;
+        return result;
     }
 
     public static void main(String[] args) {

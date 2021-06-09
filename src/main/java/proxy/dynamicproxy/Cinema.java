@@ -23,9 +23,9 @@ public class Cinema implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("Wanda Cinema");
-        method.invoke(movie, args);
+        Object result = method.invoke(movie, args);
         System.out.println("End");
-        return null;
+        return result;
     }
 
     public static void main(String[] args) {
